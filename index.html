@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sip&Savor</title>
+  <!-- BOOTSTRAP CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- FONT AWESOME CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- NAVBAR SIDE BAR -->
+  <section class="side-menu">
+    <nav class="togglenav">
+      <div class="closing">
+        <a href="#">
+          <i class="fa-solid fa-xmark close-menu" onclick="closed()"></i>
+        </a>
+      </div>
+      <div class="menu-bar">
+        <a class="menus" href="#hero">Home</a>
+        <a class="menus" href="#about">About</a>
+        <a class="menus" href="#menu">Menu</a>
+        <a class="menus" href="#Products">Products</a>
+        <a class="menus" href="#reviews">reviews</a>
+        <a class="menus" href="#contact">contact</a>
+        <a class="menus" href="#blog">blog</a>
+      </div>
+    </nav>
+  </section>
+  <!-- /NAVBAR SIDE BAR ENDS -->
+  <!-- /CART SIDE BAR ENDS -->
+  <section class="side">
+    <div class="closing">
+      <a href="#">
+        <i class="fa-solid fa-xmark close-menu" onclick="closed1()"></i>
+      </a>
+    </div>
+    <h3 class="text-center">Your Cart</h3>
+    <div class="menu-bar">
+      <img src="assets/pictures/americano.jpg" alt="" class="img-fluid pe-3">
+      <div class="number pe-3">
+      <p class="name">AMERICANO</p>
+      <input type="number" value="1">
+    </div>
+      <div class="price">
+        <p class="name">$19.99</p>
+      </div>
+    </div>
+    <div class="menu-bar">
+      <img src="assets/pictures/americano.jpg" alt="" class="img-fluid pe-3">
+      <div class="number pe-3">
+      <p class="name">AMERICANO</p>
+      <input type="number" value="1">
+    </div>
+      <div class="price">
+        <p class="name">$19.99</p>
+      </div>
+    </div>
+  </section>
+  <!-- /CART SIDE BAR ENDS -->
+  <!-- NAVBAR -->
+  <section id="content">
+    <header class="header" id="top">
+      <a href="index.html" class="logo">
+        <img src="assets/pictures/logo.png" alt="" class="img-fluid">
+      </a>
+      <nav>
+        <a class="menus" href="#hero">Home</a>
+        <a class="menus" href="#about">About</a>
+        <a class="menus" href="#menu">Menu</a>
+        <a class="menus" href="#Products">Products</a>
+        <a class="menus" href="#reviews">reviews</a>
+        <a class="menus" href="#contact">contact</a>
+        <a class="menus" href="#blog">blog</a>
+      </nav>
+      <div class="icons">
+        <div class="fas fa-search" id="search-btn" onclick="show()">
+        </div>
+        <div class="fas fa-shopping-cart" id="cart-btn" onclick="cart()">
+        </div>
+        <div class="quantity">0</div>
+        <div class="fas fa-bars" id="menu-btn" onclick="sideBar()">
+        </div>
+      </div>
+
+      <div class="search-form">
+        <input type="search" name="" id="search-box" placeholder="Search Here...">
+        <label for="search-box" class="fas fa-search"> </label>
+      </div>
+    </header>
+    <!-- /NAVBAR -->
+    <!-- GO TO THE TOP BTN -->
+      <section class="top">
+        <a href="#top" class="fas fa-arrow-up"></a>
+      </section>
+    <!-- /GO TO THE TOP BTN -->
+    <!-- HERO SECTION STARTS -->
+    <section class="hero container-fluid" id="hero">
+      <section class="row">
+        <section class="col-lg-7 col-md-7 maincol">
+          <p class="display-5 pt-4">Another day, <br>another cup of coffee</p>
+          <p class="happy">
+            You can't buy happiness, but you can buy coffee, and that's pretty close.
+          </p>
+          <button type="submit" class="coffeebtn">Grab your cup Now</button>
+        </section>
+      </section>
+    </section>
+    <!-- /HERO SECTION STARTS -->
+    <!-- /ABOUT SECTION STARTS -->
+    <section class="about" id="about">
+      <p class="display-6 text-center pt-4 pb-4">
+        <span class="gold"> About</span> Us
+      </p>
+      <section class="row">
+        <section class="img-col">
+          <img src="assets/pictures/our-coffee.jpg" alt="" class=" img-fluid">
+        </section>
+        <section class="about-col">
+          <h2 class="pb-3">What makes Our Coffee so Special</h2>
+          <p class="special pb-3">Specialty coffee is exclusively made of a family of varieties under the Arabica
+            species. Coffea Arabica is a delicate plant that is prone to diseases and requires specific conditions to
+            grow- rich soil and high altitudes.
+            <br><br>
+            Some other factors that make a difference are pesticide use, organic growing practices, and batch size.
+          </p>
+          <button type="submit" class="coffeebtn">Learn More</button>
+        </section>
+      </section>
+    </section>
+    <!-- /ABOUT SECTION ENDS -->
+    <!-- MENU SECTION STARTS -->
+    <section class="menu menu1 container-fluid mt-5" id="menu">
+      <p class="display-6 text-center">
+        OUR <span class="gold">MENU</span>
+      </p>
+      <section class="row mb-4">
+        <section class="col-lg-4 col-md-4 col-sm-6 mb-3 mt-3 cards">
+          <img src="assets/pictures/latte.jpg" alt="" class="img-fluid">
+          <h4 class="pb-2 pt-2">LATTE</h4>
+          <p class="price">
+            $16.55 <span> $20.00</span>
+          </p>
+          <button type="submit" class="coffeebtn">Add To Cart</button>
+        </section>
+
+        <section class="col-lg-4 col-md-4 col-sm-6 mb-3 mt-3 cards">
+          <img src="assets/pictures/cappucino.jpg" alt="" class="img-fluid">
+          <h4 class="pb-2 pt-2">CAPPUCINO</h4>
+          <p class="price">
+            $16.55 <span> $20.00</span>
+          </p>
+          <button type="submit" class="coffeebtn">Add To Cart</button>
+        </section>
+
+        <section class="col-lg-4 col-md-4 col-sm-6 mb-3 mt-3 cards">
+          <img src="assets/pictures/macchiato.jpg" alt="" class="img-fluid">
+          <h4 class="pb-2 pt-2">MACHIATO</h4>
+          <p class="price">
+            $16.55 <span> $20.00</span>
+          </p>
+          <button type="submit" class="coffeebtn">Add To Cart</button>
+        </section>
+        <!-- new row 2 -->
+        <section class="col-lg-4 col-md-4 col-sm-6 mb-3 mt-3 cards">
+          <img src="assets/pictures/cafe-noir.jpg" alt="" class="img-fluid">
+          <h4 class="pb-2 pt-2">CAFE NOIR</h4>
+          <p class="price">
+            $16.55 <span> $20.00</span>
+          </p>
+          <button type="submit" class="coffeebtn">Add To Cart</button>
+        </section>
+        <section class="col-lg-4 col-md-4 col-sm-6 mb-3 mt-3 cards">
+          <img src="assets/pictures/americano.jpg" alt="" class="img-fluid">
+          <h4 class="pb-2 pt-2">AMERICANO</h4>
+          <p class="price">
+            $16.55 <span> $20.00</span>
+          </p>
+          <button type="submit" class="coffeebtn">Add To Cart</button>
+        </section>
+        <section class="col-lg-4 col-md-4 col-sm-6 mb-3 mt-3 cards">
+          <img src="assets/pictures/flat-white.jpg" alt="" class="img-fluid">
+          <h4 class="pb-2 pt-2">FLAT WHITE</h4>
+          <p class="price">
+            $16.55 <span> $20.00</span>
+          </p>
+          <button type="submit" class="coffeebtn">Add To Cart</button>
+        </section>
+        <!-- new row 3 -->
+        <section class="col-lg-4 col-md-4 col-sm-6 mb-3 mt-3 cards">
+          <img src="assets/pictures/espresso.jpg" alt="" class="img-fluid">
+          <h4 class="pb-2 pt-2">ESPRESSO</h4>
+          <p class="price">
+            $16.55 <span> $20.00</span>
+          </p>
+          <button type="submit" class="coffeebtn">Add To Cart</button>
+        </section>
+        <section class="col-lg-4 col-md-4 col-sm-6 mb-3 mt-3 cards">
+          <img src="assets/pictures/mocha.jpg" alt="" class="img-fluid">
+          <h4 class="pb-2 pt-2">MOCHA</h4>
+          <p class="price">
+            $16.55 <span> $20.00</span>
+          </p>
+          <button type="submit" class="coffeebtn">Add To Cart</button>
+        </section>
+        <section class="col-lg-4 col-md-4 col-sm-6 mb-3 mt-3 cards">
+          <img src="assets/pictures/cortado.jpg" alt="" class="img-fluid">
+          <h4 class="pb-2 pt-2">CORTADO</h4>
+          <p class="price">
+            $16.55 <span> $20.00</span>
+          </p>
+          <button type="submit" class="coffeebtn">Add To Cart</button>
+        </section>
+      </section>
+    </section>
+    <!-- /MENU SECTION ENDS -->
+
+    <!-- PRODUCTS SECTION STARTS -->
+    <section class="menu products container-fluid " id="Products">
+      <p class="display-6 text-center">
+        <span class="gold">LATEST </span> PRODUCTS
+      </p>
+      <section class="row mb-4">
+        <section class="col-lg-4 col-md-4 col-sm-6 mb-3 mt-3 cards pr-col">
+          <span class="done pb-2">Added to cart</span>
+          <div class="fav">
+            <div class="fas fa-shopping-cart" id="favbtn"></div>
+            <div class="fas fa-heart" id="favbtn"></div>
+            <div class="fas fa-eye" id="favbtn"></div>
+          </div>
+          <img src="assets/pictures/products.png" alt="" class="img-fluid">
+          <h4 class="pb-2 pt-2">ARABICA</h4>
+          <div class="fav">
+            <div class="fas fa-star"></div>
+            <div class="fas fa-star"></div>
+            <div class="fas fa-star"></div>
+            <div class="fas fa-star"></div>
+            <div class="fas fa-star"></div>
+          </div>
+          <p class="price">
+            $80.49 <span> $99.49</span>
+          </p>
+        </section>
+
+        <section class="col-lg-4 col-md-4 col-sm-6 mb-3 mt-3 cards pr-col">
+          <span class="done pb-2">Added to cart</span>
+          <div class="fav">
+            <div class="fas fa-shopping-cart" id="favbtn"></div>
+            <div class="fas fa-heart" id="favbtn"></div>
+            <div class="fas fa-eye" id="favbtn"></div>
+          </div>
+          <img src="assets/pictures/products.png" alt="" class="img-fluid">
+          <h4 class="pb-2 pt-2">ROBUSTA</h4>
+          <div class="fav">
+            <div class="fas fa-star"></div>
+            <div class="fas fa-star"></div>
+            <div class="fas fa-star"></div>
+            <div class="fas fa-star"></div>
+            <div class="fas fa-star"></div>
+          </div>
+          <p class="price">
+            $80.49 <span> $99.49</span>
+          </p>
+        </section>
+
+        <section class="col-lg-4 col-md-4 col-sm-6 mb-3 mt-3 cards pr-col">
+          <span class="done pb-2">Added to cart</span>
+          <div class="fav">
+            <div class="fas fa-shopping-cart" id="favbtn"></div>
+            <div class="fas fa-heart" id="favbtn"></div>
+            <div class="fas fa-eye" id="favbtn"></div>
+          </div>
+          <img src="assets/pictures/products.png" alt="" class="img-fluid">
+          <h4 class="pb-2 pt-2">EXCELSA</h4>
+          <div class="fav">
+            <div class="fas fa-star"></div>
+            <div class="fas fa-star"></div>
+            <div class="fas fa-star"></div>
+            <div class="fas fa-star"></div>
+            <div class="fas fa-star"></div>
+          </div>
+          <p class="price">
+            $80.49 <span> $99.49</span>
+          </p>
+        </section>
+      </section>
+    </section>
+    <!-- /PRODUCTS SECTION ENDS -->
+
+    <!-- REVIEWS SECTION STARTS -->
+    <section class="testimonials" id="reviews">
+      <div class="container">
+        <p class="text-center display-6 mt-5">
+          COSTOMER'S <span class="gold">REVIEWS</span>
+        </p>
+        <div id="carouselExample" class="carousel slide carousel-dark carousel-fade">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <p>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, quibusdam numquam
+                necessitatibus aspernatur error ad quis dolorem eaque at, harum expedita. Veritatis, ullam minus odio
+                voluptatem placeat enim quas cupiditate."</p>
+              <h5>Levi Ackarman</h5>
+            </div>
+            <div class="carousel-item">
+              <p>"voluptatem placeat enim quas cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quidem veniam magnam voluptatem neque. Accusamus dolor atque, recusandae tempore molestiae, ea at libero hic sunt voluptatem odit. Facere, delectus quia. "</p>
+              <h5>Alex Volkov</h5>
+            </div>
+            <div class="carousel-item">
+              <p>"Quidem veniam magnam voluptatem neque. Accusamus dolor atque, recusandae tempore molestiae, ea at libero hic sunt voluptatem odit. Facere, delectus quia.voluptatem placeat enim quas cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti "</p>
+              <h5>Johny Depp</h5>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- /REVIES SECTION ENDS -->
+    <!-- /CONTACT SECTION STARTS -->
+      <section class="contact container-fluid" id="contact">
+        <p class="text-center display-6 mt-5">
+          <span class="gold">CONTACT</span> US
+        </p>
+        <section class="row">
+          <section class="col-lg-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13619.803980028988!2d73.12314699499068!3d31.415476226379926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1701942936050!5m2!1sen!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </section>
+          <section class="col-lg-6">
+            <div class="input">
+              <input type="text" name="" id="" placeholder="Alice..." spellcheck="false">
+              <input type="email" name="" id="" placeholder="xyz@gmail.com" spellcheck="false">
+              <textarea name="" id="" cols="40" rows="8" placeholder="Hi let's have a cup of coffee..."></textarea>
+            </div>
+          </section>
+        </section>
+      </section>
+    <!-- /CONTACT SECTION ENDS -->
+  </section>
+
+
+  <!-- BOOTSTRAP JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <!-- local script link -->
+  <script src="app.js"></script>
+</body>
+
+</html>
